@@ -1,0 +1,91 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-cream: #fff9d9;
+  --color-ink: #141312;
+  --color-mist: #c8d6e0;
+  --color-glass: rgba(0, 0, 0, 0.55);
+  --color-glass-soft: rgba(0, 0, 0, 0.3);
+
+  --font-display: 'Pixelify Sans', ui-monospace, monospace;
+  --font-sans: 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'Fragment Mono', ui-monospace, monospace;
+
+  --shadow-title: 0 0 12px rgba(255, 249, 217, 0.65), 0 0 32px rgba(255, 249, 217, 0.25);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    background: var(--color-cream);
+    color: var(--color-cream);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--color-cream) 70%, transparent);
+    color: var(--color-ink);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+
+  .text-shadow-title {
+    text-shadow: var(--shadow-title);
+  }
+
+  .glass-panel {
+    background: var(--color-glass);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+  }
+
+  .glass-soft {
+    background: var(--color-glass-soft);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes soft-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 249, 217, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 28px 2px rgba(255, 249, 217, 0.22);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-cta-glow {
+  animation: soft-pulse 3.2s ease-in-out infinite;
+}
