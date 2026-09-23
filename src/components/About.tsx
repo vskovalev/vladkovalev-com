@@ -8,15 +8,14 @@ export function About() {
 
       <div className="space-y-5 font-mono text-[14px] leading-relaxed text-cream/90 md:text-[15px] md:leading-7">
         <p>
-          Hey, I&apos;m Vlad — a Senior Data Platform Engineer based in Milan. I build analytics and
+          Hey, I&apos;m Vlad — a Senior Platform Engineer. I build analytics and
           ML-ready platforms on GCP and AWS, the kind of systems that turn noisy production data into
           something teams can actually trust and ship on.
         </p>
         <p>
-          Right now I work at Avito on data platform engineering. Before that I was a Senior Data
+          Right now I work at Conrad Electronics on data platform engineering. Before that I was a Senior Data
           Engineer at SOL-X, where fault tolerance mattered in a very literal way: ships at sea
-          don&apos;t get a second chance at a clean deploy. Earlier I worked as an ML Data Engineer
-          at Groupe SEB and started out as a Data Engineer at Sberbank.
+          don&apos;t get a second chance at a clean deploy.
         </p>
         <p>
           Day to day I live in Python, SQL, Java, dbt — pipelines, warehouses, quality checks, and
