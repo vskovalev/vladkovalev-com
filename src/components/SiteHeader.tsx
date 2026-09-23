@@ -1,6 +1,10 @@
 const NAV = [
   { label: 'About', href: '#about' },
-  { label: 'CV', href: '#cv' },
+  {
+    label: 'CV',
+    href: 'https://docs.google.com/document/d/e/2PACX-1vR0OOc8LVvB_mkvluDBLg10ZpsKPf01akT7OCdxOh_PWvzvMyM1gf6ipANGLlPbKQKs80TQC1kVriyO/pub',
+    external: true,
+  },
 ] as const
 
 export function SiteHeader() {
@@ -22,7 +26,13 @@ export function SiteHeader() {
                   /
                 </span>
               ) : null}
-              <a href={item.href} className="transition-colors hover:text-cream">
+              <a
+                href={item.href}
+                className="transition-colors hover:text-cream"
+                {...('external' in item && item.external
+                  ? { target: '_blank', rel: 'noreferrer' }
+                  : {})}
+              >
                 {item.label}
               </a>
             </span>
