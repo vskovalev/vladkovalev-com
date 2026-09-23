@@ -1,17 +1,14 @@
-# Wunder Connectome
+# vladkovalev.com
 
-Landing page inspired by [wundernn.io/connectome](https://wundernn.io/connectome) — Alfa Connectome LOB ML competition.
+Personal site for [Vlad Kovalev](https://www.linkedin.com/in/kovalev-vlad/).
 
-## Run
+## Develop
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Build
+## Deploy
 
-```bash
-npm run build
-npm run preview
-```
+Pushes to `main` deploy to GitHub Pages → [vladkovalev.com](https://vladkovalev.com/).
