@@ -1,5 +1,4 @@
 const NAV = [
-  { label: 'Writing', href: '#writing' },
   { label: 'About', href: '#about' },
   { label: 'CV', href: '#cv' },
 ] as const
