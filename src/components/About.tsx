@@ -13,9 +13,8 @@ export function About() {
           can actually trust and ship on.
         </p>
         <p>
-          Right now I work at Conrad Electronics on data platform engineering. Before that I was a
-          Senior Data Engineer at SOL-X, where fault tolerance mattered in a very literal way: ships
-          at sea don&apos;t get a second chance at a clean deploy.
+          Right now I work at Conrad Electronics on data platform engineering. Before that I was at
+          Avito, building data platforms for one of the largest classifieds marketplaces.
         </p>
         <p>
           Day to day I live in Python, SQL, Java, dbt — pipelines, warehouses, quality checks, and
