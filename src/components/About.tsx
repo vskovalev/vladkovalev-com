@@ -26,7 +26,7 @@ export function About() {
         <p>
           If you want to talk platforms, pipelines, or high-load design —{' '}
           <a
-            href="https://www.linkedin.com/in/kovalev-vlad/"
+            href="https://www.linkedin.com/in/vlad-ai-data-engineer/"
             target="_blank"
             rel="noreferrer"
             className="underline decoration-cream/40 underline-offset-4 transition-colors hover:decoration-cream"

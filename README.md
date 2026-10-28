@@ -1,6 +1,6 @@
 # vladkovalev.com
 
-Personal site for [Vlad Kovalev](https://www.linkedin.com/in/kovalev-vlad/).
+Personal site for [Vlad Kovalev](https://www.linkedin.com/in/vlad-ai-data-engineer/).
 
 ## Develop
 
